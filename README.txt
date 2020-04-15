@@ -1,0 +1,1 @@
+The solution for FreeCodeCamp's Markdown Previewer front-end project.

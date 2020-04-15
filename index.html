@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>FreeCodeCamp's Markdown Previewer Challenge</title>
+        <meta charset="UTF-8" />
+        <meta lang="EN" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+        <link href="src/styles.css" rel="stylesheet" type="text/css"></link>
+        <link
+        rel="stylesheet"
+        href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+        crossorigin="anonymous"
+      />
+    </head>
+    <body class="container-fluid bg-success p-3">
+        <h1 class="text-center p-3">FreeCodeCamp's Markdown Previewer Challenge</h1>
+        
+            <div class="row p-4">
+                <div class="col-lg w-100 bg-white rounded m-3 p-2">
+                    <div class="h2">Input your text here:</div>
+<!-------------------------- Markdown area preloaded text ---------------------->                       
+                    <textarea id="editor" oninput="this.editor.update()">
+
+This is a [link](https://www.markdownguide.org/basic-syntax#overview) to a markdown guide. Try it out!
+                        
+# Heading level 1 
+
+## Heading level 2 
+
+This is *italicized* text. 
+
+This is **bold** text.
+
+This is some `code`:
+     
+     <html>
+         <head>
+         </head>
+     </html>
+
+This is a List:
+
+1. First item
+2. Second item
+3. Third item
+4. Fourth item
+
+> This is a block quote. Isn't it wonderful?
+
+I drew a [snake](/images/BlockySnake.png)! You're welcome. :)
+
+                    </textarea>
+<!-------------------------- end of Markdown area preloaded text ---------------------->  
+                </div>
+                <div class="col-lg w-100 bg-white rounded m-3 p-2"> 
+                    <div class="h2">See your converted text here:</div>
+                    <div id="preview"></div>
+                </div>
+            </div> <!-- end of columns container -->
+            <button type="button" onclick="editor.value =''; preview.innerHTML ='';" id="clearButton" class="btn btn-lg btn-danger m-4">Clear</button>
+            
+            <footer class="fixed-bottom text-center p-3">
+                <small>&copy; Copyright 2020, KriszDev</small>
+            </footer>
+            <script src="src/markdown/lib/markdown.js"></script> 
+           
+            <script src="src/index.js" type="text/javascript"></script>
+  </body>
+</html>
