@@ -1,6 +1,6 @@
 # FreeCodeCamp Markdown Previewer Project
 
-A solution for FreeCodeCamp's Markdown Previewer front-end project.
+A solution to FreeCodeCamp's Markdown Previewer front-end project using JQuery.
 
 ## Features:
 
