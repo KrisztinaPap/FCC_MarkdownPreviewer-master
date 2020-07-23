@@ -1,6 +1,3 @@
-
-
-
 function Editor(input, preview) {
     this.update = function () {
         preview.innerHTML = markdown.toHTML(input.value);
