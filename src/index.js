@@ -7,5 +7,3 @@ function Editor(input, preview) {
 };
     var $ = function (id) { return document.getElementById(id); };
     new Editor($("editor"), $("preview"));
-
-
